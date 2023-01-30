@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+:root {
+  /*   color variables */
+  --clr-primary: #6aeeb5;
+  --clr-primary-dark: #134232;
+  --clr-primary-hover: #039d69;
+  --clr-gray100: #f0f7f8;
+  --clr-gray200: #cfd8dc;
+
+  /*   border radius */
+  --radius: 0.3rem;
+}
+
+body {
+  font-family: 'Varela Round', sans-serif;
+  background: var(--clr-gray200);
+}
+
+.nav-list {
+  background-color: white;
+  list-style: none;
+  display: flex;
+  justify-content: end;
+  padding: 1.5rem 0;
+  margin: 0;
+  align-items: center;
+}
+
+.nav-item {
+  margin-right: 4rem;
+  font-size: 1.25rem;
+}
+
+.nav-item:first-child {
+  margin-right: auto;
+  margin-left: 4rem;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: black;
+  transition: all 200ms ease-in;
+}
+.nav-item a:hover {
+  color: var(--clr-primary-hover);
+}
+
+.btn-primary {
+  background-color: var(--clr-primary-dark);
+  border: none;
+  font-family: 'Varela Round', sans-serif;
+  font-size: 1.25rem;
+  color: white;
+  padding: 0.5rem 1rem;
+  outline: none;
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: all 200ms ease-out;
+}
+
+.btn-primary:hover {
+  background-color: var(--clr-primary-hover);
+}
